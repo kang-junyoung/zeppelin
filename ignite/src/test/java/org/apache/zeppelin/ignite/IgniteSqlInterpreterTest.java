@@ -99,7 +99,7 @@ public class IgniteSqlInterpreterTest {
 
   @Test
   public void testInvalidSql() throws Exception {
-    InterpreterResult result = intp.interpret("select * hrom person", INTP_CONTEXT);
+    InterpreterResult result = intp.interpret("select * from person", INTP_CONTEXT);
 
     assertEquals(Code.ERROR, result.code());
   }
